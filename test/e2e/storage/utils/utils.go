@@ -735,7 +735,7 @@ func WaitForGVRFinalizer(ctx context.Context, c dynamic.Interface, gvr schema.Gr
 	return err
 }
 
-// VerifyFilePathGIDInPod verfies expected GID of the target filepath
+// VerifyFilePathGIDInPod verifies expected GID of the target filepath
 func VerifyFilePathGIDInPod(ctx context.Context, f *framework.Framework, filePath, expectedGID string, pod *v1.Pod) {
 	cmd := fmt.Sprintf("ls -l %s", filePath)
 	stdout, stderr, err := e2epod.ExecShellInPodWithFullOutput(ctx, f, pod.Name, cmd)

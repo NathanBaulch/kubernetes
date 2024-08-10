@@ -415,7 +415,7 @@ func withEnvironment(name Environment) interface{} {
 	return newLabel("Environment", string(name))
 }
 
-// WithConformace specifies that a certain test or group of tests must pass in
+// WithConformance specifies that a certain test or group of tests must pass in
 // all conformant Kubernetes clusters. The return value must be passed as
 // additional argument to [framework.It], [framework.Describe],
 // [framework.Context].
