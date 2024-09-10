@@ -1223,7 +1223,7 @@ var (
 		utils.LocalVolumeBlock: sets.NewString(
 			"", // Default fsType
 			"ext4",
-			//"xfs", disabled see issue https://github.com/kubernetes/kubernetes/issues/74095
+			// "xfs", disabled see issue https://github.com/kubernetes/kubernetes/issues/74095
 		),
 	}
 	// max file size
